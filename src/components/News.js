@@ -65,7 +65,7 @@ export class News extends Component {
                     //if(element.urlToImage !== null){
                         return <div className="col-md-3" key={element.url}>
                             {/* <NewsItem title={element.title.length>20 ? element.title.slice(0,20)+"..." : element.title.slice(0,20)} description={element.description.length>80 ? element.description.slice(0,80)+"..." : element.description.slice(0,80)} imgUrl={element.urlToImage} newsUrl={element.url}/> */}
-                            <NewsItem title={element.title} description={element.description} imgUrl={element.urlToImage} newsUrl={element.url}/>
+                            <NewsItem title={element.title} description={element.description} imgUrl={element.urlToImage} newsUrl={element.url} newsTime={element.publishedAt} author={element.author} source={element.source.name}/>
                             </div> 
                     //}     
                 })}
